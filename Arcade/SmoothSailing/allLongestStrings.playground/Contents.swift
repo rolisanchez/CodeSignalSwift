@@ -1,7 +1,19 @@
 import UIKit
 
 func allLongestStrings(inputArray: [String]) -> [String] {
-    return [""]
+    var longestStringArray = [String]()
+    var longestStringLength = 0
+    
+    for str in inputArray {
+        if str.count > longestStringLength {
+            longestStringLength = str.count
+            longestStringArray = [String]()
+            longestStringArray.append(str)
+        } else if str.count == longestStringLength {
+            longestStringArray.append(str)
+        }
+    }
+    return longestStringArray
 }
 
 
