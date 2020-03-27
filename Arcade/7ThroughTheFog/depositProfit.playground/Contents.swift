@@ -12,7 +12,6 @@ func depositProfit(deposit: Int, rate: Int, threshold: Int) -> Int {
     return Int(roundedN)
 }
 
-print("2.5^3.2 ", 2^3)
 let inputs = [
     [100, 20, 170],
     [100, 1, 101],
