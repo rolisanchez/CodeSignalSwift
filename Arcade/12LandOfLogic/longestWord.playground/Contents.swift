@@ -16,7 +16,7 @@ func longestWord(text: String) -> String {
     // Append last word
     if currentWord != "" {
         words.append(currentWord)
-    }    
+    }
     return words.max { $1.count > $0.count }!
 }
 
